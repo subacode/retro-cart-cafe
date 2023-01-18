@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book a table</title>
+    <link rel="icon" type="image/x-icon" href="cafe.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        a:link,
+        a:visited {
+            background-color: rgb(96, 108, 83);
+            color: rgb(255, 255, 255);
+            padding: 5px 38px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+        }
+
+        a:hover,
+        a:active {
+            background-color: rgb(0, 0, 0);
+        }
+
+        th {
+            font-family: cursive;
+            font-size: small;
+            padding-right: 50px;
+        }
+
+        td {
+            font-family: unset;
+            font-size: small;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px 50px;
+        }
+
+        table {
+            background-color: rgb(239, 231, 207);
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .registration-form {
+            padding: 10;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+        }
+
+        .registration-form p {
+            font-size: medium;
+            margin: 10px 0;
+        }
+
+        .registration-form input {
+            font-size: 16px;
+            padding: 7px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 1px;
+            outline: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: small;
+            background-color: rgb(239, 231, 207);
+            border: solid;
+            border-width: 1px;
+        }
+
+        .registration-form button {
+            font-family: cursive;
+            font-size: medium;
+            background-color: rgb(96, 108, 83);
+            color: rgb(255, 255, 255);
+            padding: 5px 38px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+        }
+
+        .registration-form button:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .book_form #username_error,
+        .book_form #email_error,
+        .book_form #contact_error,
+        .book_form #guests_error {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <body style="background-color:rgb(239, 231, 207)"></body>
+    <br>
+    <br>
+    <h1 style="color: rgb(0, 0, 0); text-align:center; font-family:cursive; font-size:x-large">book a table</h1>
+    <br>
+    <center><img src="book.jpg" width="100px" height="100px"></center>
+    <br>
+    <br>
+    <div class="registration-form">
+        <form class="book_form" action="submit.html" method="post" name="book" onsubmit="return validated()">
+
+            <p>name</p>
+            <input autocomplete="off" type="text" name="username" placeholder="enter your name">
+            <div style="color: crimson; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:small"
+                id="username_error"><i class='bx bx-error-circle'></i>please fill your name</div>
+
+            <p>email</p>
+            <input type="email" name="email" placeholder="enter your email">
+            <div style="color: crimson; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:small"
+                id="email_error"><i class='bx bx-error-circle'></i>please fill your email</div>
+
+            <p>contact</p>
+            <input type="tel" name="number" placeholder="enter your contact">
+            <div style="color: crimson; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:small"
+                id="contact_error"><i class='bx bx-error-circle'></i>please fill your contact</div>
+
+            <p>number of guests</p>
+            <input type="number" name="guests" placeholder="enter number of people">
+            <div style="color: crimson; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:small"
+                id="guests_error"><i class='bx bx-error-circle'></i>please select the number of people</div>
+
+            <br>
+            <br>
+            <br>
+            <center><button type="submit">submit</center></button>
+        </form>
+    </div>
+    <script src="book.js"></script>
+    <br>
+    <hr width="250px" size="1" color="black">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr width="250px" size="1" color="black">
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><a href="index.html" style="font-family:cursive; font-size:medium;">home</a></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="color: rgb(0, 0, 0); text-align: center; font-family: cursive; font-size: small;">copyright &copy; 2023
+        website designed by subasree</p>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
